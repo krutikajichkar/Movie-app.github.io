@@ -10,11 +10,12 @@ import { Link } from 'react-router-dom'
 
 export default function SimpleBottomNavigation() {
   const makestyle = {
+    width:"100%",
     position: "fixed",
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: "rgba(0,0,0,0.6)",
+    backgroundColor: "black",
     
   };
 
@@ -41,14 +42,14 @@ export default function SimpleBottomNavigation() {
             component={Link} to='/'
           />
           <BottomNavigationAction
-            value="/discovermovie"
+            value="/movie"
             style={{ color: "red" }}
             label="Movies"
             icon={<MovieIcon />}
             component={Link} to='/discovermovie'
           />
           <BottomNavigationAction
-            value="/discovertv"
+            value="/tv"
             style={{ color: "red" }}
             label="TV"
             icon={<LiveTvIcon />}

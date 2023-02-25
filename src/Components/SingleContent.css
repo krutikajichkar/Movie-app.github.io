@@ -1,0 +1,36 @@
+.poster_wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(53, 72, 72);
+    width: 210px;
+    padding: 6px;
+    margin: 10px 0;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.poster_wrapper:hover{
+    background-color: white;
+    color: black;
+}
+.poster{
+    height: 300px;
+    border-radius: 10px;
+}
+
+.title{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    padding-top: 7px;
+}
+
+@media(max-width:550px){
+    .media{
+        width: 46%;
+    }
+}

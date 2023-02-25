@@ -3,10 +3,10 @@ import Header from "./Components/Header";
 import SimpleBottomNavigation from "./Components/SimpleBottomNavigation";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Container } from "@mui/system";
-import Trending from "./Components/Trending";
-import DiscoverMovie from "./Components/Movie";
-import DiscoverTv from "./Components/Series";
-import Search from "./Components/Search";
+import Trending from "./Components/Trending/Trending";
+import DiscoverMovie from "./Components/Movies/Movie";
+import DiscoverTv from "./Components/Series/Series";
+import Search from "./Components/Search/Search";
 import './App.css';
 
 function App() {
@@ -15,14 +15,18 @@ function App() {
    <BrowserRouter>
   
       <Header/>
-      <Container>
-        <Routes>
+      
+     <div className="app">
+     <Container>
+       <Routes>
           <Route path='/' element={<Trending/>}/>
-          <Route path='discovermovie' element={<DiscoverMovie/>}/>
-          <Route path='discoverTv' element={<DiscoverTv/>}/>
+          <Route path='movie' element={<DiscoverMovie/>}/>
+          <Route path='Tv' element={<DiscoverTv/>}/>
           <Route path='search' element={<Search/>}/>
         </Routes>
-      </Container>
+       </Container>
+     </div>
+      
       <SimpleBottomNavigation/>
     
    </BrowserRouter>

@@ -9,6 +9,10 @@
     z-index: 100;
     box-shadow: 0px 2px 19px 5px grey;
     font-family: 'Tilt Prism';
+    position: fixed;
+    left: 0;
+    right: 0;
+    cursor: pointer;
 
 }
 

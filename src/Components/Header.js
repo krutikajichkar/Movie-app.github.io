@@ -4,7 +4,7 @@ import './Header.css'
 function Header() {
   return (
     <div>
-        <nav className='navbar'>
+        <nav className='navbar' onClick={() => window.scroll(0,0)}>
              Movie App
         </nav>
     </div>

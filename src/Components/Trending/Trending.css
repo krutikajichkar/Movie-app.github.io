@@ -1,0 +1,12 @@
+.trending_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.trending_title{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}

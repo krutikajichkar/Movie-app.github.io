@@ -1,3 +1,15 @@
+*{
+    scroll-behavior: smooth;
+   
+}
+
 body{
     background-color: rgb(49, 45, 45);
+    color: white;
+  
+}
+
+.app{
+    padding-top: 130px;
+    padding-bottom: 70px;
 }
