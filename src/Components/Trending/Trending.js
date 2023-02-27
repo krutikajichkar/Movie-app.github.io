@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import SingleContent from "../SingleContent";
 import './Trending.css'
-import CustiomPagination from "../Pagination/CustiomPagination";
+import CustiomPagination from "../Pagination/CustomPagination";
 
 function Trending() {
   const [content, setContent] = useState([]);
