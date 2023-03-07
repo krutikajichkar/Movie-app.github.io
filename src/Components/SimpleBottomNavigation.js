@@ -1,4 +1,4 @@
-import * as React from "react";
+import  React ,{useEffect}from "react";
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
@@ -6,7 +6,8 @@ import WhatshotIcon from "@mui/icons-material/Whatshot";
 import MovieIcon from "@mui/icons-material/Movie";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
 import SearchIcon from "@mui/icons-material/Search";
-import { Link } from 'react-router-dom'
+import { Link} from 'react-router-dom';
+
 
 export default function SimpleBottomNavigation() {
   const makestyle = {
@@ -22,6 +23,19 @@ export default function SimpleBottomNavigation() {
   const pathname = window.location.pathname;
 
   const [value, setValue] = React.useState(pathname);
+  
+
+  // useEffect(() => {
+  //   if (value === 0) {
+  //     history.push("/");
+  //   } else if (value === 1) {
+  //     history.push("/movies");
+  //   } else if (value === 2) {
+  //     history.push("/series");
+  //   } else if (value === 3) {
+  //     history.push("/search");
+  //   }
+  // }, [value, history]);
 
   return (
     <div>
@@ -35,7 +49,7 @@ export default function SimpleBottomNavigation() {
           style={makestyle}
         >
           <BottomNavigationAction
-            value="/"
+          
             style={{ color: "red" }}
             label="Trending"
             icon={<WhatshotIcon />}
@@ -46,17 +60,17 @@ export default function SimpleBottomNavigation() {
             style={{ color: "red" }}
             label="Movies"
             icon={<MovieIcon />}
-            component={Link} to='/discovermovie'
+            component={Link} to='/movie'
           />
           <BottomNavigationAction
-            value="/tv"
+           
             style={{ color: "red" }}
             label="TV"
             icon={<LiveTvIcon />}
-            component={Link} to='/discovertv'
+            component={Link} to='/tv'
           />
           <BottomNavigationAction
-            value="/search"
+            
             style={{ color: "red" }}
             label="Search"
             icon={<SearchIcon />}

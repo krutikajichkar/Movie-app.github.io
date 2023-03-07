@@ -7,6 +7,8 @@ import CustiomPagination from "../Pagination/CustomPagination";
 function Trending() {
   const [content, setContent] = useState([]);
   const [page, setPage] = useState(1);
+  const [numberOfPages, setnumberOfPages] = useState()
+ 
 
   const fetchResults = async () => {
     const { data } = await axios.get(
@@ -14,10 +16,13 @@ function Trending() {
     );
 
     setContent(data.results);
+    setnumberOfPages(data.total_pages);
   };
 
   useEffect(() => {
+   
     fetchResults();
+     // eslint-disable-next-line
   }, [page]);
 
   return (
@@ -40,7 +45,7 @@ function Trending() {
             );
           })}
       </div>
-      <CustiomPagination setPage={setPage}/>
+      <CustiomPagination setPage={setPage} numberOfPages={numberOfPages}/>
     </>
   );
 }
