@@ -1,0 +1,111 @@
+.ContentWrapper{
+  
+    padding:24px;
+    background-color: rgb(41, 36, 36);
+    width: 90%;
+    height: 80%;
+    color: white;
+    border-radius: 10px;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentModal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+    scrollbar-width:none;
+   border-radius: 10px;
+   width: 100%;
+   height: 100%;
+}
+
+.contentModal::-webkit-scrollbar {
+    display: none;
+  }
+
+.ContentModal__portrait{
+    display: none;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.ContentModal__landscape{
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.contentModal__about{
+    padding: 10px;
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    justify-content: space-evenly;
+    font-weight: 300;
+}
+
+.contentModal__title {
+    display: flex;
+    font-weight: 600;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tagline{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px;
+  }
+  
+  .contentModal__description {
+    display: flex;
+    height: 40%;
+    overflow-y: scroll;
+    padding: 15px;
+    border-radius: 20px;
+    scrollbar-width: none; /* Firefox */
+    box-shadow: inset 0 0 5px #000000;
+    text-align: justify;
+  }
+
+  .contentModal__description::-webkit-scrollbar {
+    display: none;
+  }
+@media(min-width:835px){
+    .ContentModal__landscape {
+        display: none;
+      }
+
+      .ContentModal__portrait {
+        display: flex;
+        width: 38%;
+      }
+
+      .contentModal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 10px;
+      }
+
+      .contentModal__about {
+        width: 58%;
+        padding: 0;
+        height: 100%;
+      }
+      .contentModal__title {
+        font-size: 50px;
+      }
+      .contentModal__description {
+        font-size: 22px;
+      }
+}

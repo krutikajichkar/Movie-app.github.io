@@ -40,7 +40,7 @@ function Genre({
   }, []);
 
   return (
-    <div style={{ padding: "6px 0px" }}>
+    <div style={{paddingBottom:'15px'}}>
       {selectedGenre &&
         selectedGenre.map((gen) => (
           <Chip
@@ -49,7 +49,7 @@ function Genre({
             style={{
               margin: 2,
               backgroundColor: "blue",
-              padding: "2px 2px",
+              padding: "4px 4px",
               
             }}
             color="primary"

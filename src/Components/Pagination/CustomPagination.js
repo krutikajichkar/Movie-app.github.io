@@ -22,7 +22,7 @@ function CustiomPagination({ setPage , numberOfPages }) {
         display: "flex",
         justifyContent: "center",
         width: "100%",
-        paddingTop: "10px",
+        paddingTop: "20px",
       }}
     >
      <ThemeProvider theme={darktheme}>

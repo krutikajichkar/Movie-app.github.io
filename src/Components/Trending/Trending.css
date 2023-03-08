@@ -7,7 +7,17 @@
 
 .trending_title{
     text-align: center;
-    font-size: 20px;
-    padding-bottom: 20px;
+    font-size: 3.2vw;
+    text-transform: uppercase;
+    padding: 4px;
     font-weight: 600;
+    color: rgb(243, 142, 142);
+    text-shadow: 0px 0px 5px red;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media(max-width:700px){
+    .trending_title{
+        font-size: 30px;
+    }
 }

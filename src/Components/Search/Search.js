@@ -36,7 +36,7 @@ function Search() {
   }, [type, page]);
   return (
     <div>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex" ,paddingTop:'70px'}}>
         <TextField
           style={{ width: "90%", background: "white", borderRadius: "10px" }}
           id="filled-basic"
@@ -87,7 +87,7 @@ function Search() {
       </div>
       {text &&
           content.length === 0 &&
-          (type ? <h1 style={{textAlign:'center'}}>No Series Found</h1> : <h1>No Movies Found</h1>)}
+          (type ? <h1 style={{textAlign:'center'}}>No Series Found</h1> : <h1 style={{textAlign:'center'}}>No Movies Found</h1>)}
 
 {numberOfPages > 1 && (
         <CustomPagination setPage={setPage} numberOfPages={numberOfPages} />

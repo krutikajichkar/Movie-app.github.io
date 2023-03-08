@@ -1,4 +1,4 @@
-import  React ,{useEffect}from "react";
+import  React from "react";
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
@@ -17,7 +17,7 @@ export default function SimpleBottomNavigation() {
     right: 0,
     bottom: 0,
     backgroundColor: "black",
-    
+    zIndex:100,
   };
 
   const pathname = window.location.pathname;

@@ -1,36 +1,41 @@
-.poster_wrapper{
+.media {
     display: flex;
     flex-direction: column;
-    background-color: rgb(53, 72, 72);
-    width: 210px;
-    padding: 6px;
-    margin: 10px 0;
-  
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #253e39;
     border-radius: 10px;
-}
-.poster_wrapper:hover{
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .media:hover {
     background-color: white;
     color: black;
-}
-.poster{
-    height: 300px;
+  }
+  
+  @media (max-width: 550px) {
+    .media {
+      width: 46%;
+    }
+  }
+  
+  .poster {
     border-radius: 10px;
-}
-
-.title{
+  }
+  
+  .title {
+    width: 100%;
     text-align: center;
-    padding-top: 5px;
-}
-
-.subtitle{
+    font-size: 17px;
+    padding: 8px 0;
+  }
+  
+  .subTitle {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5px;
-    padding-top: 7px;
-}
-
-@media(max-width:550px){
-    .media{
-        width: 46%;
-    }
-}
+    padding-bottom: 3px;
+    padding: 0 2px;
+    padding-bottom: 3px;
+  }
