@@ -24,7 +24,7 @@ function Search() {
       );
       setContent(data.results);
       setnumberOfPages(data.total_pages);
-       console.log(data);
+      console.log(data);
     } catch (error) {
       console.error(error);
     }
@@ -36,7 +36,7 @@ function Search() {
   }, [type, page]);
   return (
     <div>
-      <div style={{ display: "flex" ,paddingTop:'70px'}}>
+      <div style={{ display: "flex", paddingTop: "70px" }}>
         <TextField
           style={{ width: "90%", background: "white", borderRadius: "10px" }}
           id="filled-basic"
@@ -44,7 +44,10 @@ function Search() {
           variant="filled"
           onChange={(e) => setText(e.target.value)}
         />
-        <Button style={{ marginLeft: "20px", background: "white" }} onClick={fetchSearch}>
+        <Button
+          style={{ marginLeft: "20px", background: "white" }}
+          onClick={fetchSearch}
+        >
           <SearchIcon style={{ color: "black" }} size="large" />
         </Button>
       </div>
@@ -58,8 +61,7 @@ function Search() {
             setType(newValue);
             setPage(1);
           }}
-
-          style={{marginBottom:'20px'}}
+          style={{ marginBottom: "20px" }}
         >
           <Tab style={{ width: "50%", color: "white" }} label="Search Movie" />
           <Tab
@@ -86,10 +88,14 @@ function Search() {
           })}
       </div>
       {text &&
-          content.length === 0 &&
-          (type ? <h1 style={{textAlign:'center'}}>No Series Found</h1> : <h1 style={{textAlign:'center'}}>No Movies Found</h1>)}
+        content.length === 0 &&
+        (type ? (
+          <h1 style={{ textAlign: "center" }}>No Series Found</h1>
+        ) : (
+          <h1 style={{ textAlign: "center" }}>No Movies Found</h1>
+        ))}
 
-{numberOfPages > 1 && (
+      {numberOfPages > 1 && (
         <CustomPagination setPage={setPage} numberOfPages={numberOfPages} />
       )}
     </div>
