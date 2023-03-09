@@ -4,7 +4,6 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Carousel from "../Carousel/Carousel";
 import {
@@ -53,7 +52,9 @@ export default function ContentModal({ children, media_type, id }) {
 
   useEffect(() => {
     fetchData();
+     // eslint-disable-next-line
     fetchVideos();
+     // eslint-disable-next-line
   }, []);
 
   return (

@@ -2,10 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Button, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-
 import SingleContent from "../SingleContent";
 import CustomPagination from "../Pagination/CustomPagination";
 function Search() {
@@ -33,6 +31,7 @@ function Search() {
   useEffect(() => {
     window.scroll(0, 0);
     fetchSearch();
+     // eslint-disable-next-line
   }, [type, page]);
   return (
     <div>

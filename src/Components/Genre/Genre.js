@@ -27,20 +27,16 @@ function Genre({
     );
     setGenres(data.genres);
     console.log(data);
-    console.log(typeof(genres))
+    console.log(typeof genres);
   };
 
   useEffect(() => {
-    
     fetchGenre();
-     // eslint-disable-next-line
-    return () => {
-      setGenres({});
-    };
+    // eslint-disable-next-line
   }, []);
 
   return (
-    <div style={{paddingBottom:'15px'}}>
+    <div style={{ paddingBottom: "15px" }}>
       {selectedGenre &&
         selectedGenre.map((gen) => (
           <Chip
@@ -50,7 +46,6 @@ function Genre({
               margin: 2,
               backgroundColor: "blue",
               padding: "4px 4px",
-              
             }}
             color="primary"
             size="small"
