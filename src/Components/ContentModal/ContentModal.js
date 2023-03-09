@@ -70,7 +70,7 @@ export default function ContentModal({ children, media_type, id }) {
         closeAfterTransition
         slots={{ backdrop: Backdrop }}
         className="modal"
-        slotProps={{
+        slotprops={{
           backdrop: {
             timeout: 500,
           },

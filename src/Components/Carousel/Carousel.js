@@ -22,21 +22,18 @@ const Carousel = ({ media_type, id }) => {
     </div>
   ));
   const responsive = {
-    0: {
-      items: 2,
-    },
-    512: {
-      items: 5,
-    },
-    1024: {
-      items: 7,
-    },
+    0: { items: 3 },
+    512: { items: 4 },
+    666: { items: 5 },
+    1241: { items: 6 },
+    1361: { items: 7 }
   };
   const fetchCredits = async () => {
     const { data } = await axios.get(
       `https://api.themoviedb.org/3/${media_type}/${id}/credits?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
     );
     setCredits(data.cast);
+    console.log(credits);
   };
 
   useEffect(() => {
@@ -51,7 +48,7 @@ const Carousel = ({ media_type, id }) => {
       disableButtonsControls
       responsive={responsive}
       items={items}
-      autoPlay
+      autoPlay={credits.length > 2}
     />
   );
 };
