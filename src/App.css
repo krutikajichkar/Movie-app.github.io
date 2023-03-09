@@ -9,9 +9,10 @@ body{
 
   .app {
     min-height: 100vh;
-    background-color: rgb(49, 45, 45);
+    /* background-color: rgb(49, 45, 45); */
+    background-color: rgb(17, 16, 16);
     color: white;
-    padding-top: 80px;
+    padding-top: 110px;
     padding-bottom: 70px;
   }
   

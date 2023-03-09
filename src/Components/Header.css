@@ -1,24 +1,26 @@
 .navbar{
-    height: 90px;
-    background-color: black;
-    color:red;
+    height: 80px;
+    background-color: rgb(43, 39, 39);
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 800;
-    padding-top: 17px;
+    padding-top: 35px;
     z-index: 100;
-    box-shadow: 0px 2px 19px 5px grey;
-    font-family: 'Tilt Prism';
+    /* box-shadow: 0px 2px 19px 5px rgb(53, 43, 43); */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: fixed;
     left: 0;
     right: 0;
     cursor: pointer;
+    text-shadow: 0px 0px 5px red;
+    color: rgb(250, 212, 212);
 
 }
 
 @media(max-width:1000px){
     .navbar{
-        padding-top: 25px;
-        font-size: 40px;
+        height: 70px;
+        padding-top: 40px;
+        font-size: 25px;
     }
 }

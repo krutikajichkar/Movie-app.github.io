@@ -16,7 +16,7 @@ export default function SimpleBottomNavigation() {
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: "black",
+    backgroundColor: "rgb(43,39,39)",
     zIndex:100,
   };
 
@@ -50,28 +50,28 @@ export default function SimpleBottomNavigation() {
         >
           <BottomNavigationAction
           
-            style={{ color: "red" }}
+            style={{ color: "rgb(243, 142, 142)" , textShadow:'0px 0px 5px red' }}
             label="Trending"
             icon={<WhatshotIcon />}
             component={Link} to='/'
           />
           <BottomNavigationAction
             value="/movie"
-            style={{ color: "red" }}
+            style={{ color: "rgb(243, 142, 142)" , textShadow:'0px 0px 5px red' }}
             label="Movies"
             icon={<MovieIcon />}
             component={Link} to='/movie'
           />
           <BottomNavigationAction
            
-            style={{ color: "red" }}
+            style={{  color: "rgb(243, 142, 142)" , textShadow:'0px 0px 5px red' }}
             label="TV"
             icon={<LiveTvIcon />}
             component={Link} to='/tv'
           />
           <BottomNavigationAction
             
-            style={{ color: "red" }}
+            style={{  color: "rgb(243, 142, 142)" , textShadow:'0px 0px 5px red' }}
             label="Search"
             icon={<SearchIcon />}
             component={Link} to='/search'

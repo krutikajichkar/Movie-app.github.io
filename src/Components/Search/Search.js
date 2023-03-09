@@ -35,9 +35,9 @@ function Search() {
   }, [type, page]);
   return (
     <div>
-      <div style={{ display: "flex", paddingTop: "70px" }}>
+      <div style={{ display: "flex", paddingTop: "50px" }}>
         <TextField
-          style={{ width: "90%", background: "white", borderRadius: "10px" }}
+          style={{ width: "80%", background: "white", borderRadius: "20px" ,height:'50px' }}
           id="filled-basic"
           label="Search"
           variant="filled"
