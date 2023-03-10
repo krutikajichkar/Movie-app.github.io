@@ -10,7 +10,7 @@ body{
   .app {
     min-height: 100vh;
     /* background-color: rgb(49, 45, 45); */
-    background-color: rgb(30, 27, 27);
+    background-color: rgb(41, 36, 36);
     color: white;
     padding-top: 110px;
     padding-bottom: 70px;
@@ -22,17 +22,7 @@ body{
     }
   }
   
-  /* .trending_title {
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2vw;
-    padding: 4px;
-    border-radius: 50px;
-    color: white;
-  }
-   */
+ 
   @media (max-width: 1000px) {
     .pageTitle {
       font-size: 6.4vw;
