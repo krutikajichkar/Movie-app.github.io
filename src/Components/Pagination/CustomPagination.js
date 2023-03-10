@@ -1,23 +1,31 @@
 import { Pagination } from "@mui/material";
+import styled from "styled-components";
 import React from "react";
-import { ThemeProvider ,createTheme} from '@mui/material/styles';
-import white from '@mui/material/colors/blue';
+ import { ThemeProvider ,createTheme} from '@mui/material/styles';
+// import blue from '@mui/material/colors/blue';
+
+import './CustomPagination.css'
 
 
-
+const StyledPagination = styled(Pagination)(({ theme }) => ({
+  "& .MuiPaginationItem-page": {
+    color: "white",
+  },
+}));
 
 function CustiomPagination({ setPage , numberOfPages }) {
-  const darktheme = createTheme({
-    pallete:{
-     primary: white,
-    },
-  });
+
+  // const classes = useStyles();
+ 
+ 
+  
   const handlePage = (page) => {
     setPage(page);
     window.scroll(0, 0);
   };
   return (
-    <div
+ 
+     <div
       style={{
         display: "flex",
         justifyContent: "center",
@@ -25,16 +33,21 @@ function CustiomPagination({ setPage , numberOfPages }) {
         paddingTop: "20px",
       }}
     >
-     <ThemeProvider theme={darktheme}>
-     <Pagination
+    
+   
+    <StyledPagination
+    
         count={numberOfPages}
         onChange={(e) => handlePage(e.target.textContent)}
-        color='primary'
+        color="secondary"
         hideNextButton
         hidePrevButton
+       
       />
-     </ThemeProvider>
+    
+    
     </div>
+   
   );
 }
 
