@@ -22,7 +22,7 @@ function Search() {
       );
       setContent(data.results);
       setnumberOfPages(data.total_pages);
-      console.log(data);
+      //console.log(data);
     } catch (error) {
       console.error(error);
     }
